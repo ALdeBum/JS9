@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Форма регистрации</h2>
+    <form id="registrationForm">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirmPassword">Подтверждение пароля:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+            <option value="">Выберите пол</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select><br><br>
+
+        <label for="specialization">Специализация:</label>
+        <input type="text" id="specialization" name="specialization"><br><br>
+
+        <label for="position">Должность:</label>
+        <input type="text" id="position" name="position"><br><br>
+
+        <button type="button" onclick="validateForm()">Регистрация</button>
+    </form>
+
+    <div id="errorMessages" class="error"></div>
+
+    <button type="button" onclick="runTest()">Пройти тест по JavaScript</button>
+
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
